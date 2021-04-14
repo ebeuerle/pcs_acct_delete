@@ -5,11 +5,11 @@ import yaml
 class ConfigHelper(object):
     def __init__(self):
         config = self.read_yml('configs')
-        self.rl_user = config["prisma_cloud"]["username"]
-        self.rl_pass = config["prisma_cloud"]["password"]
-        self.rl_cust = config["prisma_cloud"]["customer_name"]
-        self.rl_api_base = config["prisma_cloud"]["api_base"]
-        self.rl_filename = config["prisma_cloud"]["filename"]
+        self.pc_user = config["prisma_cloud"]["username"]
+        self.pc_pass = config["prisma_cloud"]["password"]
+        self.pc_cust = config["prisma_cloud"]["customer_name"]
+        self.pc_api_base = config["prisma_cloud"]["api_base"]
+        self.pc_filename = config["prisma_cloud"]["filename"]
 
 
     @classmethod

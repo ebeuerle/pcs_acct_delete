@@ -4,7 +4,7 @@ import requests
 import time
 import json
 
-class RLSession(object):
+class PCSession(object):
     # Max number of retries for any reason
     max_retries = 5
     # Always retry on these statuses, within the requests session.
